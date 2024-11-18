@@ -57,9 +57,44 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\RedHatDisplay-Black.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-BlackItalic.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-Bold.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-ExtraBoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-Italic.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-Light.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-LightItalic.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-Medium.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-MediumItalic.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-Regular.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-SemiBold.ttf" />
+	  <None Remove="Resources\Fonts\RedHatDisplay-SemiBoldItalic.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\PaginaSobre.xaml.cs">
+	    <DependentUpon>PaginaSobre.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PaginaSobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
