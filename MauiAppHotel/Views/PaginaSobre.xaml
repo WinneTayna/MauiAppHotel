@@ -4,7 +4,7 @@
              x:Class="MauiAppHotel.Views.PaginaSobre"
              Title="PaginaSobre"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource PrimaryDark}">
+             BackgroundColor="{StaticResource Gray100}">
     <VerticalStackLayout Padding="20"
                          VerticalOptions="CenterAndExpand">
         <Label Text="Sobre o Aplicativo"
@@ -14,9 +14,10 @@
 
         <Label Text="Desenvolvedor(a): "
                FontSize="15"
+               FontFamily="RedHatDisplayBold"
                TextColor="{StaticResource OffBlack}"
                HorizontalOptions="Center"
-               Padding="0,30,0,0"/>
+               Padding="0,50,0,5"/>
 
         <Label Text= "Winne Tayná Torres Neves"
                FontSize="15"
@@ -24,7 +25,14 @@
                HorizontalOptions="Center"
                Padding="0,0,0,20"/>
 
-        <Label Text="Ano de Desenvolvimento: 2024"
+        <Label Text="Ano de Desenvolvimento: "
+               FontSize="15"
+               FontFamily="RedHatDisplayBold"
+               TextColor="{StaticResource OffBlack}"
+               HorizontalOptions="Center"
+               Padding="0,0,0,5"/>
+
+        <Label Text="2024"
                FontSize="15"
                TextColor="{StaticResource OffBlack}"
                HorizontalOptions="Center"

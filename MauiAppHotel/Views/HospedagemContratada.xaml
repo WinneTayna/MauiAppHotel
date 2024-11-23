@@ -4,7 +4,18 @@
              x:Class="MauiAppHotel.Views.HospedagemContratada"
              Title="HospedagemContratada"
              BackgroundColor="{StaticResource Gray100}">
-    
+
+    <NavigationPage.TitleView>
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="Hospedagem Contratada" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   FontSize="Title"
+                   TextColor="{StaticResource Gray300}"
+                   Padding="50,0,0,0"/>
+        </Grid>
+    </NavigationPage.TitleView>
+
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
         <Label Text="{Binding QuartoSelecionado.Descricao}"
                TextColor="{StaticResource Primary}"
